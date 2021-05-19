@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'CRUDApp',
-    'accounts',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +140,6 @@ LOGOUT_REDIRECT_URL = 'home'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+LOGIN_URL = 'login' 
+LOGOUT_URL = 'logout'
